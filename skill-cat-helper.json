@@ -1,0 +1,968 @@
+{
+  "intents": [
+    {
+      "intent": "اكل",
+      "examples": [
+        {
+          "text": "ايش كلها"
+        },
+        {
+          "text": "طعام القطة"
+        },
+        {
+          "text": "كيف اطعم القطة"
+        },
+        {
+          "text": "كيف اطعمها"
+        },
+        {
+          "text": "كيفية تحديد الاكل"
+        },
+        {
+          "text": "ماذا تأكل"
+        },
+        {
+          "text": "نظام الاكل"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الاظافر",
+      "examples": [
+        {
+          "text": "كيف اقص اظافرها"
+        },
+        {
+          "text": "كيف اقصر الاظافر"
+        },
+        {
+          "text": "كيف اقلم الاظافر"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "الحمام",
+      "examples": [
+        {
+          "text": "افضل نوع تراب لقضاء الحاجة"
+        },
+        {
+          "text": "اين تقضي حاجتها"
+        },
+        {
+          "text": "كيف تقضي حاجتها"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "النظافة",
+      "examples": [
+        {
+          "text": "كيف احممها"
+        },
+        {
+          "text": "كيف انظفها"
+        },
+        {
+          "text": "متى احممها"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "انهاء_المحادثة",
+      "examples": [
+        {
+          "text": "ثانكيو"
+        },
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "شكرا لك"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "قطط",
+      "examples": [
+        {
+          "text": "بس"
+        },
+        {
+          "text": "بسة"
+        },
+        {
+          "text": "بسس"
+        },
+        {
+          "text": "قط"
+        },
+        {
+          "text": "قطة"
+        },
+        {
+          "text": "قطط"
+        },
+        {
+          "text": "هر"
+        },
+        {
+          "text": "هرة"
+        },
+        {
+          "text": "هرر"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "لوحة_التحكم",
+      "examples": [
+        {
+          "text": "الهدف من الموقع"
+        },
+        {
+          "text": "الهدف من لوحة التحكم"
+        },
+        {
+          "text": "ايش هذي اللوحة"
+        },
+        {
+          "text": "لوحة التحكم"
+        },
+        {
+          "text": "ما الغرض من لوحة التحكم"
+        },
+        {
+          "text": "ماالغرض من لوحة التحكم"
+        },
+        {
+          "text": "ما الهدف من لوحة التحكم"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "مرحبا",
+      "examples": [
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "مراحب"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "هاي"
+        },
+        {
+          "text": "هلا"
+        },
+        {
+          "text": "هلا والله"
+        },
+        {
+          "text": "هلو"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "من_أنا",
+      "examples": [
+        {
+          "text": "من انت"
+        },
+        {
+          "text": "من برمجك"
+        },
+        {
+          "text": "من خلفك"
+        },
+        {
+          "text": "من صممك"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "اعمار_القطط",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "الصغيرة",
+          "synonyms": [
+            "الصغيرة",
+            "انفطمت",
+            "صغيرة",
+            "عمرها اربعة شهور",
+            "عمرها اصغر من سنة",
+            "عمرها اكبر من ثلاث شهور",
+            "عمرها ثمنية شهور",
+            "عمرها خمسة شهور",
+            "عمرها سبعة شهور",
+            "عمرها ستة شهور",
+            "عمرها عشرة شهور"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "الكبيرة",
+          "synonyms": [
+            "الكبيرة",
+            "شابة",
+            "عمرها سنة",
+            "عمرها سنتين",
+            "كبيرة"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "حديثي الولادة",
+          "synonyms": [
+            "بيبي",
+            "حديثي الولادة",
+            "عمرها اصغر من ثلاث شهور",
+            "عمرها شهر",
+            "عمرها شهرين",
+            "نونو"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "نوع_الاكل",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "الجاف",
+          "synonyms": [
+            "الجاف",
+            "الناشف",
+            "جاف",
+            "حبوب",
+            "ناشف"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "الرطب",
+          "synonyms": [
+            "المعجون",
+            "المعلب",
+            "رطب",
+            "معجون",
+            "معلب"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1626486422270",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "كم عمرها ؟ (بالشهور)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1626532904192",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1626532904201",
+      "previous_sibling": "handler_8_1626532904201"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_18_1626530612734",
+      "context": {
+        "text": "@نوع_الاكل"
+      },
+      "conditions": "@نوع_الاكل",
+      "event_name": "input",
+      "dialog_node": "handler_19_1626530612734"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ما نوع الاكل ؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_18_1626530612734",
+      "event_name": "focus",
+      "dialog_node": "handler_20_1626530612734",
+      "previous_sibling": "handler_19_1626530612734"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_27_1626530915160",
+      "context": {
+        "text": "@نوع_الاكل"
+      },
+      "conditions": "@نوع_الاكل",
+      "event_name": "input",
+      "dialog_node": "handler_28_1626530915160"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ما نوع الاكل ؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_27_1626530915160",
+      "event_name": "focus",
+      "dialog_node": "handler_29_1626530915160",
+      "previous_sibling": "handler_28_1626530915160"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "كم عمرها ؟ (بالشهور)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1626532041685",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1626532041691",
+      "previous_sibling": "handler_6_1626532041691"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_6_1626528195268",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_35_1626533624068",
+      "previous_sibling": "slot_5_1626534673188"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_17_1626530612733",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_36_1626533632801"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_26_1626530915160",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_37_1626533641584"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1626531939944",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_38_1626533649630"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_4_1626532827130",
+      "event_name": "focus",
+      "dialog_node": "handler_39_1626533662689"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1626534673188",
+      "context": {
+        "text": "@نوع_الاكل"
+      },
+      "conditions": "@نوع_الاكل",
+      "event_name": "input",
+      "dialog_node": "handler_4_1626534673188"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1626532041685",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1626532041691"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "نوع الاكل؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1626534673188",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1626534673188",
+      "previous_sibling": "handler_4_1626534673188"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1626532904192",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_8_1626532904201"
+    },
+    {
+      "type": "standard",
+      "title": "تعريف",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " مرحبا! أنا معين، وأنا هنا لأعاونكم على أن تتعرفوا على ثلاثة أشياء:: أولا: ما غرض لوحة التحكم؟،  ثانيًا: لمساعدتكم على تربية القطط، ثالثًا: عن نبذة عن مصممي. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "node_10_1626486460110"
+    },
+    {
+      "type": "standard",
+      "title": "مصممي",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مصممتي هي : جنى باقيس، طالبة تقنية معلومات في جامعة الملك عبد العزيز، تحب برمجة التطبيقات وبدأت تتعلم على المواقع وأحبت ذلك جدا، اللغات التي تعلمتها هي :جافا وبايثون و...الخ. هذه السنة (2021-2022) هيا سنتها الاخيرة في الجامعة أتمنى لها التوفيق دائمًا."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#من_أنا",
+      "dialog_node": "node_1_1626488633702",
+      "previous_sibling": "node_4_1626532827130"
+    },
+    {
+      "type": "frame",
+      "title": " طعام القطط البيبيز",
+      "output": {},
+      "parent": "node_4_1626534996900",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@اعمار_القطط:(حديثي الولادة)",
+      "dialog_node": "node_17_1626530612733",
+      "previous_sibling": "node_6_1626528195268"
+    },
+    {
+      "type": "standard",
+      "title": "تعريف_اللوحة",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "هذه اللوحة لروبوت له ذراع وقاعدة في البداية سترى ستة محركات وهي فقط خاصة بالذراع يتم تحريكها بحسب الزوايا وأما الخمسة الازرار السفلية فهي لقاعدة الروبوت تحركه على حسب إختيارك للإتجاه. هذه اللوحة ستمكنك من التحكم بالروبوت عن طريق الواي فاي من أي مكان تريد."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#لوحة_التحكم",
+      "dialog_node": "node_2_1626486445876",
+      "previous_sibling": "node_2_1626486451363"
+    },
+    {
+      "type": "standard",
+      "title": "ترحيب",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "مرحبا بك، ما الخدمة التي تريدها؟"
+              },
+              {
+                "text": "هلا فيك، كيف أساعدك؟"
+              },
+              {
+                "text": "هلا هلا، كيف أعاونك؟"
+              },
+              {
+                "text": "أهلن وسهلين، كيف أخدمك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#مرحبا",
+      "dialog_node": "node_2_1626486451363",
+      "previous_sibling": "node_10_1626486460110"
+    },
+    {
+      "type": "frame",
+      "title": " طعام القطط الكبيرة",
+      "output": {},
+      "parent": "node_4_1626534996900",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@اعمار_القطط:الكبيرة",
+      "dialog_node": "node_26_1626530915160",
+      "previous_sibling": "node_17_1626530612733"
+    },
+    {
+      "type": "standard",
+      "title": "قطط",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تُعتبر القطط في الإسلام حيوانات طاهرة، ووُردت أحاديث من السُنة النبويّة التي تدل على طهارتها وجواز اقتنائها وتربيّتها، كما تُعتبر القطط حيوانات مُحببةٍ إلى النبي محمد صلى الله عليه وسلم وكان يسميها من الطوافين والطوافات في البيوت، وكان يتوضأ من الماء الذي شربت منه القطة واعتبره طاهراً. كُني أحد الصحابة بأبو هريرة اقتباساً من لفظ الهر بسبب تعلقه الشديد بهذا الحيوان. ويُعتبر القط أكثر الحيوانات تواجداً في بلاد المُسلمين، ومن أكثر الحيوانات اقتناءً من قِبل المُسلمين. وعلى عكس الكلاب، فإن الشرع الإسلامي أجاز بدخول القطط للمنازل والبيوت والمساجد وذلك لطهارتها. يمكنني مساعدتك في اختيار مقتنياتها من الاكل والشرب والنظافة."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#قطط",
+      "dialog_node": "node_3_1626490889930",
+      "previous_sibling": "node_2_1626486445876"
+    },
+    {
+      "type": "frame",
+      "title": "الاستحمام",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#النظافة",
+      "dialog_node": "node_3_1626531939944",
+      "previous_sibling": "node_4_1626534996900"
+    },
+    {
+      "type": "frame",
+      "title": "الحمام",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#الحمام",
+      "dialog_node": "node_4_1626532827130",
+      "previous_sibling": "node_5_1626532711442"
+    },
+    {
+      "type": "frame",
+      "title": "طعام القطط",
+      "conditions": "#اكل",
+      "dialog_node": "node_4_1626534996900",
+      "previous_sibling": "node_3_1626490889930"
+    },
+    {
+      "type": "standard",
+      "title": "نهاية",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "شكرًا لك لطلبك المساعدة مني"
+              },
+              {
+                "text": "مرحبٌ بك دائما"
+              },
+              {
+                "text": "أنا سعيد بمساعدتك وقت ما تشاء"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#انهاء_المحادثة",
+      "dialog_node": "node_5_1626486422270",
+      "previous_sibling": "node_1_1626488633702"
+    },
+    {
+      "type": "standard",
+      "title": "قص الاظافر",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "يمكنك التعلم من هنا بالخطوات كيفية قص الاظافر : https://youtu.be/NCqEGxYyl-g"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#الاظافر",
+      "dialog_node": "node_5_1626532711442",
+      "previous_sibling": "node_3_1626531939944"
+    },
+    {
+      "type": "frame",
+      "title": " طعام القطط الصغيرة",
+      "parent": "node_4_1626534996900",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@اعمار_القطط:الصغيرة",
+      "dialog_node": "node_6_1626528195268"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تقوم القطة الأم بلعق فتحة الشرج في القطط الصغيرة بعد الولادة لتحفيز عملية الإخراج، حيث ان القطط الوليدة لا تستخدم الليتر بوكس (صندوق الفضلات) إلا بعد وصولها إلى الفطام.\n\nلذلك في حالة القطط اليتيمة التي فقدت أمهاتها يمكنك تقليد ذلك الفعل عن طريق استخدام قطنة مبللة دافئة ومسح فتحة الشرج بعد عملية إطعام القطط الصغيرة."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1626532827130",
+      "conditions": "@sys-number < 2",
+      "dialog_node": "response_10_1626532937596",
+      "previous_sibling": "handler_39_1626533662689"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "لا ينبغى أبدًا تحميم القطط دون سن 4 شهو، حيث تتولى القطة الأم خلال الأسابيع الثمانية الأولى عملية التنظيف التي تحتاجها القطة الصغيرة، وإذا كنت بحاجة إلى تنظيف قطة صغيرة لم تكمل الثمانية أسابيع بعد، بدلًا من تحميم القطة؛ فاستخدم قطعة قماش ناعمة ومبللة لمسح المناطق المتسخة من جسم القط."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1626531939944",
+      "conditions": "@sys-number < 4",
+      "dialog_node": "response_2_1626532067907",
+      "previous_sibling": "handler_38_1626533649630"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "يمكنك التعلم طريقة تحميم القطط من هذا الفيديو : https://youtu.be/jc2bCE6ZBeM"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1626531939944",
+      "conditions": "@sys-number > 4",
+      "dialog_node": "response_2_1626532131526",
+      "previous_sibling": "response_2_1626532067907"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "طعام قطط اقل من 4 شهور ",
+            "source": "https://cdn.shopify.com/s/files/1/1633/6277/products/3182550707305_1024x.jpg?v=1605004781",
+            "description": "نوع الاكل جاف",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_17_1626530612733",
+      "conditions": "@نوع_الاكل:الجاف",
+      "dialog_node": "response_24_1626530612734",
+      "previous_sibling": "handler_36_1626533632801"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "طعام قطط اقل من 4 شهور ",
+            "source": "https://cdn.salla.sa/nxZRa/vZteOKfWkdIPnZ54NsVw1EZ9p3uJPTvIqKMjz8RA.jpg",
+            "description": "نوع الاكل رطب",
+            "response_type": "image"
+          },
+          {
+            "title": "طعام قطط اقل من 4 شهور ",
+            "source": "https://pbs.twimg.com/media/EFAv8T9WwAADTDK?format=jpg&name=4096x4096",
+            "description": "نوع الاكل سائل  (حليب)",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_17_1626530612733",
+      "conditions": "@نوع_الاكل:الرطب",
+      "dialog_node": "response_25_1626530612734",
+      "previous_sibling": "response_24_1626530612734"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "طعام قطط اكبر من سنة ",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/415U45e65oL._AC_.jpg",
+            "description": "نوع الاكل جاف",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_26_1626530915160",
+      "conditions": "@نوع_الاكل:الجاف",
+      "dialog_node": "response_33_1626530915160",
+      "previous_sibling": "handler_37_1626533641584"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "طعام قطط اكبر من سنة ",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/41rJR1PZ0DL._AC_.jpg",
+            "description": "نوع الاكل رطب",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_26_1626530915160",
+      "conditions": "@نوع_الاكل:الرطب",
+      "dialog_node": "response_34_1626530915160",
+      "previous_sibling": "response_33_1626530915160"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "طعام قطط اقل من سنة وأكبر من 4 شهور ",
+            "source": "https://cf2.s3.souqcdn.com/item/2016/09/19/11/56/09/68/item_XL_11560968_16457619.jpg",
+            "description": "نوع الاكل جاف",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1626528195268",
+      "conditions": "@نوع_الاكل:الجاف",
+      "dialog_node": "response_4_1626529600767",
+      "previous_sibling": "handler_35_1626533624068"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "تراب للقطط",
+            "source": "https://pbs.twimg.com/media/DLNgpGoX0AIo2mE?format=jpg&name=900x900",
+            "description": "نصائح لتجريب القطة على قضاء الحاجة في الصندوق المخصص : https://ar.wikihow.com/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D9%82%D8%B7%D8%A9-%D8%B9%D9%84%D9%89-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%A7%D9%84%D9%81%D8%B6%D9%84%D8%A7%D8%AA",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1626532827130",
+      "conditions": "@sys-number > 2",
+      "dialog_node": "response_6_1626533089448",
+      "previous_sibling": "response_10_1626532937596"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "طعام قطط اقل من سنة وأكبر من 4 شهور ",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/41E6t3w6I9L._AC_.jpg",
+            "description": "نوع الاكل رطب",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1626528195268",
+      "conditions": "@نوع_الاكل:الرطب",
+      "dialog_node": "response_8_1626529909968",
+      "previous_sibling": "response_4_1626529600767"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_17_1626530612733",
+      "variable": "$text",
+      "dialog_node": "slot_18_1626530612734",
+      "previous_sibling": "response_25_1626530612734"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_26_1626530915160",
+      "variable": "$text",
+      "dialog_node": "slot_27_1626530915160",
+      "previous_sibling": "response_34_1626530915160"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1626531939944",
+      "variable": "$number",
+      "dialog_node": "slot_4_1626532041685",
+      "previous_sibling": "response_2_1626532131526"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1626532827130",
+      "variable": "$number",
+      "dialog_node": "slot_5_1626532904192",
+      "previous_sibling": "response_6_1626533089448"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1626528195268",
+      "variable": "$text",
+      "dialog_node": "slot_5_1626534673188"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "cat helper",
+  "language": "en",
+  "description": ""
+}
